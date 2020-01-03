@@ -1,0 +1,19 @@
+<ng-container>
+  <div style="text-align: center;">
+    <button (click)="positivo()">Contador positivo</button>
+    <button (click)="negativo()">Contador negativo</button>
+
+    <div>
+      {{ contador }}
+    </div>
+    <div *ngIf="contador > 15; then hola"></div>
+    <div *ngIf="contador == -10; then adios"></div>
+  </div>
+</ng-container>
+<ng-template #hola>
+  <button (click)="reiniciar()">hola mundo</button>
+</ng-template>
+
+<ng-template #adios>
+  <button (click)="reiniciar()">Adios</button>
+</ng-template>
