@@ -6,7 +6,6 @@ import {
   EventEmitter,
   Host
 } from "@angular/core";
-import { AppComponent } from "src/app/app.component";
 import { ListComponent } from "../list/list.component";
 
 @Component({

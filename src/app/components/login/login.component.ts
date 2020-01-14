@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { UserService } from 'src/app/services/user.service';
-import { ApiService } from 'src/app/services/api.service';
+import { UserService } from '@services/user.service';
+import { ApiService } from '@services/api.service';
 
 @Component({
   selector: 'app-login',

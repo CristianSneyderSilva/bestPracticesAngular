@@ -10,6 +10,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ListComponent } from './components/list/list.component';
 import { UserComponent } from './components/user/user.component';
 import { FormsComponent } from './components/forms/forms.component';
+import { AliasComponent } from './components/alias/alias.component';
+import { DirectivaDirective } from './components/directivas/directiva.directive';
+import { ClasePipesComponent } from './components/clase-pipes/clase-pipes.component';
+import { UppercasePipe } from './components/pipes/uppercase.pipe';
+import { SortPipe } from './components/pipes/sort.pipe';
+import { SortByPipe } from './components/pipes/sort-by.pipe';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { FormsComponent } from './components/forms/forms.component';
     LoginComponent,
     ListComponent,
     UserComponent,
-    FormsComponent
+    FormsComponent,
+    AliasComponent,
+    DirectivaDirective,
+    ClasePipesComponent,
+    UppercasePipe,
+    SortPipe,
+    SortByPipe
   ],
   imports: [
     BrowserModule,
