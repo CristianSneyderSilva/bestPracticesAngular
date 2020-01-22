@@ -1,14 +1,37 @@
-
 <app-login></app-login>
 
-<br><br>
+<br /><br />
 
 <app-list></app-list>
 
 <app-forms></app-forms>
 
-<span [miDirectiva] = "false">{{title}}</span>
+<span [miDirectiva]="false">{{ title }}</span>
 
 <app-clase-pipes></app-clase-pipes>
 
+<http-client></http-client>
+
+<view-viewchild></view-viewchild>
+
+<br />
+
+<app-search (search)="handleSearch($event)"></app-search>
+
+<ul *ngFor="let usuarios of usuarios | search: filtroValor">
+  <li>
+    {{ usuarios.name }}
+  </li>
+</ul>
+
+<h4>Marca de coches</h4>
+<mat-form-field>
+  <mat-select [value]="marcaSeleccionada" (selectionChange)="marcaSeleccionada = $event.value">
+    <mat-option *ngFor="let marca of marcas" [value]="marca">
+      {{ marca }}
+    </mat-option>
+  </mat-select>
+</mat-form-field>
+
+<app-ng-on-changes [marca]="marcaSeleccionada"></app-ng-on-changes>
 

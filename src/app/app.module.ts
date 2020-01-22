@@ -16,6 +16,18 @@ import { ClasePipesComponent } from './components/clase-pipes/clase-pipes.compon
 import { UppercasePipe } from './components/pipes/uppercase.pipe';
 import { SortPipe } from './components/pipes/sort.pipe';
 import { SortByPipe } from './components/pipes/sort-by.pipe';
+import { HttpClientComponent } from './components/http-client/http-client.component';
+import { ViewchildComponent } from './components/viewchild/viewchild.component';
+import { SearchComponent } from './components/search/search.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchPipe } from './components/pipes/search.pipe';
+import { ContentComponent } from './components/content/content.component';
+import {RouterModule, Routes} from '@angular/router';
+import { NgOnChangesComponent } from './components/ng-on-changes/ng-on-changes.component';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -31,13 +43,23 @@ import { SortByPipe } from './components/pipes/sort-by.pipe';
     ClasePipesComponent,
     UppercasePipe,
     SortPipe,
-    SortByPipe
+    SortByPipe,
+    HttpClientComponent,
+    ViewchildComponent,
+    SearchComponent,
+    SearchPipe,
+    ContentComponent,
+    NgOnChangesComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    BrowserAnimationsModule,
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
